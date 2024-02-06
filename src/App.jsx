@@ -11,8 +11,11 @@ function App() {
     <>
     <div className='App'>
         <h1>Quiz App</h1>
-          <GameStateContext.Provider value={{ gameState, setGameState, userName, setUserName }}>
+          <GameStateContext.Provider 
+            value={{ gameState, setGameState, userName, setUserName }}
+          >
             {gameState === 'menu' && <Menu />}
+            {userName }
           </GameStateContext.Provider>
     </div>
     </>
