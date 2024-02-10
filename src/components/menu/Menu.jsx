@@ -10,7 +10,13 @@ export default function Menu () {
     <div className="Menu">
         <label>Enter Your Name:</label>
         <input type="text" placeholder="Your Response"/>
-        <button>Start Quiz</button>
+          <button 
+            onClick={()=>{
+            setGameState('playing')
+          }}
+          >
+            Start Quiz
+          </button>
     </div>
     </>
   )
