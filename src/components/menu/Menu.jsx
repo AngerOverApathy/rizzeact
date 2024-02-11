@@ -3,6 +3,8 @@ import { GameStateContext } from '../../helpers/Contexts'
 import './index.css'
 
 export default function Menu () {
+  const { gameState, setGameState } = useContext(GameStateContext)
+
   return (
     <>
     <div className="Menu">
