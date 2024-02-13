@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Menu from './components/menu/Menu'
 import { GameStateContext } from './helpers/Contexts'
 import './App.css'
