@@ -10,7 +10,9 @@ function App() {
     <>
     <div className='App'>
         <h1>Quiz App</h1>
-        {gameState === 'menu' && <Menu />}
+          <GameStateContext.Provider value={{ gameState, setGameState }}>
+            {gameState === 'menu' && <Menu />}
+          </GameStateContext.Provider>
     </div>
     </>
   )
