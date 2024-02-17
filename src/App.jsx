@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 import Menu from './components/menu/Menu'
+import { GameStateContext } from './helpers/Contexts'
+import './App.css'
 
 function App() {
   const [gameState, setGameState] = useState('menu')
