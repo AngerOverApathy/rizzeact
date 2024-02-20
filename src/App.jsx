@@ -9,7 +9,7 @@ function App() {
     <>
     <div className='App'>
         <h1>Quiz App</h1>
-          <Menu />
+        {gameState === 'menu' && <Menu />}
     </div>
     </>
   )
