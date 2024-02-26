@@ -1,11 +1,10 @@
-
-
+import './index.css'
 
 export default function Menu () {
   return (
-    <div>
-      <input type="text" />
-      <button>Search</button>
+    <div className="Menu">
+      <input type="text" placeholder=" Your Response"/>
+      <button>Start Quiz</button>
     </div>
   )
 }
