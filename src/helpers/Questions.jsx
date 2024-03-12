@@ -1,6 +1,6 @@
 
 
-const Questions = [
+export const Questions = [
     {
         prompt: 'What is 1+3?',
         optionA: '24',
