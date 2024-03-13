@@ -1,4 +1,5 @@
 import './index.css'
+import { Questions } from '../helpers/Questions'
 
 export default function Quiz() {
   return (
