@@ -7,7 +7,7 @@ export const Questions = [
         optionB: 'React.createComponent()',
         optionC: 'React.createElement()',
         optionD: 'React.newComponent()',
-        answer: 'C'
+        answer: 'optionC'
     },
     {
         prompt: 'Which of the following is a hook introduced in React 16.8 for managing state?',
@@ -15,7 +15,7 @@ export const Questions = [
         optionB: 'useEffect',
         optionC: 'useReducer',
         optionD: 'useContext',
-        answer: 'A'
+        answer: 'optionA'
     },
     {
         prompt: 'How do you pass a prop named "firstName" to a component in React?',
@@ -23,7 +23,7 @@ export const Questions = [
         optionB: '<Component {firstName} />',
         optionC: '<Component firstName="John" />',
         optionD: '<Component props.firstName="John" />',
-        answer: 'C'
+        answer: 'optionC'
     },
     {
         prompt: 'What is the term for the process of converting JSX into JavaScript?',
@@ -31,7 +31,7 @@ export const Questions = [
         optionB: 'Compiling',
         optionC: 'Interpreting',
         optionD: 'Executing',
-        answer: 'A'
+        answer: 'optionA'
     },
     {
         prompt: 'Which of the following is NOT a valid way to handle events in React?',
@@ -39,6 +39,6 @@ export const Questions = [
         optionB: 'Binding in the constructor',
         optionC: 'Using public class fields syntax',
         optionD: 'Using "onEvent" attribute in the component\'s JSX',
-        answer: 'D'
+        answer: 'optionD'
     }    
 ]
