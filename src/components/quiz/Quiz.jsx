@@ -14,7 +14,7 @@ export default function Quiz() {
     <div className="Quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
         <div className="questions">
-            <button onClick={()=>{chooseOption('A')}}>
+            <button onClick={()=>{chooseOption('optionA')}}>
             {Questions[currentQuestion].optionA}
             </button>
 
