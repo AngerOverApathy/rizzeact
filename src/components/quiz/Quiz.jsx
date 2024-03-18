@@ -15,13 +15,35 @@ export default function Quiz() {
       <h1>{Questions[currentQuestion].prompt}</h1>
         <div className="questions">
 
-            <button onClick={()=>{chooseOption('optionA')}}>
+            <button 
+                onClick={()=>{
+                    chooseOption('optionA')
+                }}
+            >
                 {Questions[currentQuestion].optionA}
             </button>
+            <button 
+                onClick={()=>{
+                    chooseOption('optionB')
+                }}
+            >
+                {Questions[currentQuestion].optionB}
+            </button>
+            <button 
+                onClick={()=>{
+                    chooseOption('optionC')
+                }}
+            >
+                {Questions[currentQuestion].optionC}
+            </button>
+            <button 
+                onClick={()=>{
+                    chooseOption('optionD')
+                }}
+            >
+                {Questions[currentQuestion].optionD}
+            </button>
 
-            <button>{Questions[currentQuestion].optionB}</button>
-            <button>{Questions[currentQuestion].optionC}</button>
-            <button>{Questions[currentQuestion].optionD}</button>
         </div>
     </div>
   )
