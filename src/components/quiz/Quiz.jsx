@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Questions } from '../helpers/Questions'
+import { Questions } from '../../helpers/Questions'
 import './index.css'
 
 export default function Quiz() {

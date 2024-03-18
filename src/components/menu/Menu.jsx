@@ -9,7 +9,7 @@ export default function Menu () {
     <>
     <div className="Menu">
         <label>Enter Your Name:</label>
-        <input type="text" placeholder="Your Response" onChange={(event)=>{
+        <input type="text" placeholder="Your Name" onChange={(event)=>{
           setUserName(event.target.value)
         }}/>
           <button 
