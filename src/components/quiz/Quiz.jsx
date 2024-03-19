@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Questions } from '../../helpers/Questions'
+import { GameStateContext } from './helpers/Contexts'
 import './index.css'
 
 export default function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [optionChosen, setOptionChosen] = useState('')
+
+    const { gameState, setGameState, userName, setUserName, score, setScore } = useContext(
+        GameStateContext
+    )
 
     const chooseOption = (option) => {
         setOptionChosen(option)
