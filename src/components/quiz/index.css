@@ -10,3 +10,15 @@
     align-items: center;
     padding: 0px 25px;
 }
+
+h1 {
+    color: white;
+}
+
+.nxtQstnBtn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}

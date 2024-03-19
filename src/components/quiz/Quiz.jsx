@@ -10,6 +10,18 @@ export default function Quiz() {
         setOptionChosen(option)
     }
 
+    const nextQuestion = () => {
+        if (Questions[currentQuestion].answer === optionChosen) {
+            // setScore(score + 1)
+            console.log('Correct Answer!')
+        } else{
+            // setCurrentQuestion(currentQuestion + 1)
+                console.log('Wrong Answer!')
+        }
+
+        setCurrentQuestion(currentQuestion + 1)
+    }
+
   return (
     <div className="Quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
@@ -45,6 +57,12 @@ export default function Quiz() {
             </button>
 
         </div>
+        <button 
+            className='nxtQstnBtn'
+            onClick={nextQuestion}
+        >
+            Next Question
+        </button>
     </div>
   )
 }
