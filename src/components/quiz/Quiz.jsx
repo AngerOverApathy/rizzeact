@@ -7,7 +7,7 @@ export default function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [optionChosen, setOptionChosen] = useState('')
 
-    const { gameState, setGameState, userName, setUserName, score, setScore } = useContext(
+    const { score, setScore } = useContext(
         GameStateContext
     )
 
@@ -17,11 +17,7 @@ export default function Quiz() {
 
     const nextQuestion = () => {
         if (Questions[currentQuestion].answer === optionChosen) {
-            // setScore(score + 1)
-            console.log('Correct Answer!')
-        } else{
-            // setCurrentQuestion(currentQuestion + 1)
-                console.log('Wrong Answer!')
+            setScore(score + 1)
         }
 
         setCurrentQuestion(currentQuestion + 1)
@@ -62,6 +58,7 @@ export default function Quiz() {
             </button>
 
         </div>
+        {score}
         <button 
             className='nxtQstnBtn'
             onClick={nextQuestion}
