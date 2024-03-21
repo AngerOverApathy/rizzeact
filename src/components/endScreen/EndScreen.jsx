@@ -3,7 +3,7 @@
 const EndScreen = () => {
 
     return (
-        <div>
+        <div className="EndScreen">
             <h1>Quiz Complete</h1>
         </div>
     )
