@@ -1,11 +1,12 @@
 
 
 const EndScreen = () => {
-    const { score } = useContext(GameStateContext)
 
     return (
-        <div className="EndScreen">
-            <h1>Your score is {score} / 5 correct answers</h1>
+        <div>
+            <h1>Quiz Complete</h1>
         </div>
     )
 }
+
+export default EndScreen;
