@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react'
 import { Questions } from '../../helpers/Questions'
-import { GameStateContext } from './helpers/Contexts'
+import { GameStateContext } from '../../helpers/Contexts'
 import './index.css'
 
 export default function Quiz() {
