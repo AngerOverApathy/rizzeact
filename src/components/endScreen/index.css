@@ -9,3 +9,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.endQuizBtn {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}

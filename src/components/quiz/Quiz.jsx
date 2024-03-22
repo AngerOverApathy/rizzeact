@@ -64,7 +64,7 @@ export default function Quiz() {
         </div>
         
         {currentQuestion === Questions.length - 1 ? (
-            <button className='nxtQstnBtn' onClick={finishQuiz}>
+            <button className='endQuizBtn' onClick={finishQuiz}>
                 Finish Quiz
             </button>
         ) : (
