@@ -5,14 +5,21 @@ import './index.css'
 
 const EndScreen = () => {
 
-    const { score, setScore, gameState, setGameState } = useContext(
+    const { score, setScore, setGameState, userName } = useContext(
         GameStateContext
     )
+
+    const restartQuiz = () => {
+        setScore(0)
+        setGameState('menu')
+    }
 
     return (
         <div className="EndScreen">
             <h1>Quiz Complete</h1>
+            <h3>{userName}</h3>
             <h1>{score} / {Questions.length}</h1>
+            <button className='nxtQstnBtn' onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )
 }

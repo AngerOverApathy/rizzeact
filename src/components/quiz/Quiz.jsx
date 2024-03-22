@@ -27,7 +27,7 @@ export default function Quiz() {
         if (Questions[currentQuestion].answer === optionChosen) {
             setScore(score + 1)
         }
-        
+
         setGameState('finished')
     }
 
@@ -72,7 +72,7 @@ export default function Quiz() {
                 Finish Quiz
             </button>
         ) : (
-            <button onClick={nextQuestion}>Next Question</button>
+            <button className='nxtQstnBtn' onClick={nextQuestion}>Next Question</button>
         )}
     </div>
   )
