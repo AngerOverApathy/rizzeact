@@ -24,6 +24,10 @@ export default function Quiz() {
     }
 
     const finishQuiz = () => {
+        if (Questions[currentQuestion].answer === optionChosen) {
+            setScore(score + 1)
+        }
+        
         setGameState('finished')
     }
 

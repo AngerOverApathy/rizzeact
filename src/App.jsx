@@ -26,7 +26,7 @@ function App() {
           >
             {gameState === 'menu' && <Menu />}
             {gameState === 'playing' && <Quiz />}
-            {gameState === 'endScreen' && <EndScreen />}
+            {gameState === 'finished' && <EndScreen />}
           </GameStateContext.Provider>
     </div>
     </>
